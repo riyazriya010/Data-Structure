@@ -1,0 +1,59 @@
+Create a Singly Linked List:
+
+Implement a singly linked list with methods to add a node at the end, add a node at the beginning, and display the list.
+
+Find Length of Linked List:
+
+Write a function to find the length of a singly linked list.
+
+Search an Element in Linked List:
+
+Write a function to search for a specific value in a singly linked list and return its position.
+
+Delete a Node from Linked List:
+
+Write a function to delete a node with a specific value from a singly linked list.
+
+Reverse a Linked List:
+
+Write a function to reverse a singly linked list.
+
+Detect a Loop in Linked List:
+
+Write a function to detect if there is a cycle in a singly linked list.
+
+Find the Middle of Linked List:
+
+Write a function to find the middle node of a singly linked list.
+
+Remove Duplicates from Sorted Linked List:
+
+Write a function to remove duplicate elements from a sorted singly linked list.
+
+Merge Two Sorted Linked Lists:
+
+Write a function to merge two sorted singly linked lists into a single sorted list.
+
+Check Palindrome Linked List:
+
+Write a function to check if a singly linked list is a palindrome.
+
+Nth Node from End of Linked List:
+
+Write a function to find the Nth node from the end of a singly linked list.
+
+Insert Node at Specific Position:
+
+Write a function to insert a node at a specific position in a singly linked list.
+
+Delete Node at Specific Position:
+
+Write a function to delete a node at a specific position in a singly linked list.
+
+Swap Nodes in Linked List:
+
+Write a function to swap two nodes in a singly linked list without swapping the data.
+
+Rotate Linked List:
+
+Write a function to rotate a singly linked list by a given number of nodes.
