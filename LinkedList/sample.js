@@ -100,6 +100,7 @@ class LinkedList {
         this.size--
         return removedNode.value
     }
+    
 
     //time complexity Big O(n) linear
     // removing the node with values
@@ -205,7 +206,7 @@ list.append(2)
 list.append(3)
 list.append(4)
 
-console.log(list.detectCycle());
+// console.log(list.detectCycle());
 // list.reverse()
 // list.print()
 console.log(list)

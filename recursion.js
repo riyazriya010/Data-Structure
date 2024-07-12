@@ -46,3 +46,38 @@ console.log(binarySearch(arr, target));
     
 
 console.log(fibonacci(7, 0, 1)); //invoking the outer function
+
+
+
+   /*        recursive factorial      */
+   
+   function fact(n){
+    if(n === 0){
+        return 1
+    }
+
+    return n*fact(n-1)
+   }
+   console.log(fact(5))
+
+   
+   /*      recursive sum of arr    */
+   function sum(arr){
+    let sum = 0
+    let i = 0
+
+    function recSum(){
+        if(i >= arr.length){
+            return sum
+        }
+
+        sum += arr[i];
+        i++
+
+        return recSum()
+    }
+    return recSum()
+   }
+   const arr2 = [1,2,3,4,5];
+   console.log(sum(arr2))
+   
