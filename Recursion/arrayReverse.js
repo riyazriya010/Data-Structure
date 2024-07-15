@@ -10,7 +10,6 @@ function reverseArr(arr){
         let temp = arr[left]
         arr[left] = arr[right]
         arr[right] = temp
-
         return reverse(left +1, right -1)
     }
 
