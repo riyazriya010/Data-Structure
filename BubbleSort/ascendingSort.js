@@ -1,4 +1,6 @@
 
+// time complexity of bubble sort is
+
 var bubbleSort = (num) => {
     let swapped
     do{
