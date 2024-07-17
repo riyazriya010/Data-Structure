@@ -18,4 +18,4 @@ var bubbleSort = (num) => {
 }
 
 const num = [-6,8,20,-2,4]
-console.log(bubbleSort(num))
+console.log(bubbleSort(num));

@@ -25,6 +25,7 @@ function quickSort(arr) {
             right.push(arr[i]);
         }
     }
+    
     console.log("Left array:", left); // Debug: print the left array
     console.log("Right array:", right); // Debug: print the right array
 
