@@ -97,7 +97,7 @@ O(N) + O(N) = The time complexity is O(N)
 
 // arrange in ascending order
 function ascendingOrder(arr){
-    
+
     for(let i = 0; i < arr.length; i++){
         for(let j = i+1; j < arr.length; j++){
             if(arr[i] > arr[j]){
@@ -115,4 +115,6 @@ console.log(ascendingOrder(arr1))
 /* 
 The loops will run in N^2, becase the outer loop will run 5 times the inner loop will
 run 5 times for each outer loop iteration.
+
+Time Complexity is O (N^2)
 */
