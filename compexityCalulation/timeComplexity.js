@@ -22,28 +22,28 @@ Last Index (or) target not present in the array = Worst Case
 
 Using these we can analysis the time complexity:
 
-O (1) - Constant Time
+O (1) - Constant Time - Excellent
 
-O (n) - Linear Time
+O (log n) - Logarithmic Time - Excellent
 
-O (log n) - Logarithmic Time
+O (n) - Linear Time - Fair
 
-O (n log n) - Linearithmic Time
+O (n log n) - Linearithmic Time - Bad
 
-O (n^2) - Quadratic Time
+O (n^2) - Quadratic Time - worst
 
-O(n^3) - Cubic Time
+O(n^3) - Cubic Time - worst
 
-O(2n) - Exponential Time
+O(2n) - Exponential Time - worst
 
-𝑂(𝑛!) - Factorial Time
+𝑂(𝑛!) - Factorial Time - worst
 
 */
 
 
 // Big O Notation:
 
-// Example: 1
+// Example: 1 O(1) - Constant
 
 // two operations are there
 let a = 10 // this will run one time
@@ -55,7 +55,7 @@ console.log(10 + 20) // ( operation 2 ) this will run one time
 // time also, so the time complexity is O(1) constant
 
 
-// Example: 2
+// Example: 2 O(N) Linear
 
 //find the target index
 function targetIndex(arr, target){ // this will run one time
@@ -93,7 +93,7 @@ O(N) + O(N) = The time complexity is O(N)
 */
 
 
-// Example: 3
+// Example: 3 O(N^2) Quadratic
 
 // arrange in ascending order
 function ascendingOrder(arr){
@@ -118,3 +118,26 @@ run 5 times for each outer loop iteration.
 
 Time Complexity is O (N^2)
 */
+
+
+// Example: 4  O(2^N) Exponential
+/*
+You get exponential time complexity when the growth rate 
+doubles with each addition to the input (n), often iterating 
+through all subsets of the input elements.
+*/
+
+const recursiveFibonacci = (n) => {
+    if (n < 2) {
+      return n;
+    }
+    return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+  };
+  
+  console.log(recursiveFibonacci(6)); // 8
+
+  /*
+  In the code above, the algorithm specifies a growth rate that 
+  doubles every time the input data set is added. This means the 
+  time complexity is exponential with an order O(2^n).
+  */
