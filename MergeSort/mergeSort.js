@@ -1,9 +1,6 @@
 
 
 function mergeSort(arr){
-    console.log()
-    console.log('mergeSort: ')
-    console.log('arr: ',arr)
     if(arr.length < 2){
         return arr
     }
@@ -15,10 +12,6 @@ function mergeSort(arr){
 }
 
 function merge(leftArr, rightArr){
-    console.log()
-    console.log('merge: ')
-    console.log('leftArr: ',leftArr)
-    console.log('rightArr: ',rightArr)
     let sortedArr = []
     while(leftArr.length && rightArr.length){
         if(leftArr[0] <= rightArr[0]){
@@ -27,9 +20,6 @@ function merge(leftArr, rightArr){
             sortedArr.push(rightArr.shift())
         }
     }
-    console.log('sortedArr: ',sortedArr)
-    const result = [...sortedArr, ...leftArr, ...rightArr]
-    console.log('result: ',result)
     return [...sortedArr, ...leftArr, ...rightArr]
 }
 

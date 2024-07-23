@@ -15,5 +15,6 @@ function insertionSort(arr) {
     return arr
 }
 
-const arr = [8, -2, 4, -6, 20 ,4]
+const arr = [-6, 20, 8, 4, -2]
 console.log(insertionSort(arr))
+

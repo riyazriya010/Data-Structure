@@ -1,24 +1,53 @@
 
-function reverseStr(str){
+// stack reverse
+
+function stackReverse(str){
+    if(!str){
+        return str
+    }
+
     let stack = []
-
-    //pushing values
-    for(let val of str){
-        stack.push(val)
+    let i = 0
+    while(i < str.length){
+        stack.unshift(str[i])
+        i++
     }
 
-    //popping values
-    let values = ''
+    let reverstr = ''
     while(stack.length > 0){
-        values += stack.pop()
+        reverstr += stack.shift()
     }
 
-    return values
+    return reverstr
 }
-
 const str = 'Riyas'
-// console.log(reverseStr(str))
+console.log('stack: ',stackReverse(str))
 
+  // string reverse
+
+  function queueReverse(str){
+    if(!str){
+        return str
+    }
+
+    let queue = []
+    let i = 0;
+    while(i < str.length){
+        queue.push(str[i])
+        i++
+    }
+
+    let reverStr = ''
+    while(queue.length > 0){
+        reverStr += queue.shift()
+    }
+
+    return reverStr
+
+  }
+
+  const str1 = 'Riyas'
+  console.log(queueReverse(str1))
 
 const embeddedArray = [
                        {name: 'Riyas', age:23},
