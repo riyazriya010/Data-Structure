@@ -10,7 +10,8 @@ class Node{
 class SortingMinHeap{
     constructor(array,size){
          this.root = new Node(array, size)
-         this.buildMinHeap()
+        //  this.buildMinHeap()
+        this.minHeapify(0)
     }
 
     parent(index){
@@ -74,13 +75,15 @@ class SortingMinHeap{
         }
     }
 
-    buildMinHeap(){
-        for(let i = Math.floor(this.root.size / 2) - 1; i >= 0; i--){
-            this.minHeapify(i)
-        }
-    }
+    // buildMinHeap(){
+    //     for(let i = Math.floor(this.root.size / 2) - 1; i >= 0; i--){
+    //         console.log(i)
+    //         this.minHeapify(i)
+    //         console.log('array: ',this.root.array)
+    //     }
+    // }
 }
 
-const arr = [7,4,3,9,8]
+const arr = [7,4,3,9,8,1]
 const sort = new SortingMinHeap(arr, arr.length)
 console.log(sort.sortedArray())

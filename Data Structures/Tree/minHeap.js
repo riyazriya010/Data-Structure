@@ -207,5 +207,5 @@ heap.insertKey(45)
 // display the current heap array
 heap.displayArr()
 
-heap.deleteKey(1)
-heap.displayArr()
+// heap.deleteKey(1)
+// heap.displayArr()

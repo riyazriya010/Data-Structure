@@ -94,7 +94,7 @@ class KaryTree {
 
 
     bstSearch(value) {
-        if (this.root === null) return false; // Return false if the root is null
+        if (this.root === null) return null; // Return null if the root is null
 
         const queue = [this.root];
 
@@ -170,4 +170,4 @@ tree.addChild(child2, child7, 0)
 console.log(tree.bstSearch('B')); // Output: true
 console.log(tree.bstSearch('S')); // Output: false
 
-console.log(tree)
+console.log(tree.countChild())
